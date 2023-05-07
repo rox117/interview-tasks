@@ -1,0 +1,49 @@
+
+Task 1: Caesar Cipher
+=====================
+
+The Caesar Cipher is a very simple encryption technique, which shifts each
+letter by a number of places in the alphabet.
+See: https://en.wikipedia.org/wiki/Caesar_cipher
+
+Task: Implement encryption and decryption of Caesar Ciphers for ASCII letters.
+
+Do the implementation in:
+    src/main/java/org/example/CaesarCipher.java
+
+Test the implementation with (all tests should pass):
+    src/test/java/org/example/CaesarCipherTest.java
+
+
+Task 2: Transaction Pricing
+===========================
+
+In this task you are given a collection of transactions and a collection of
+customers. The goal is to calculate the total price for each customer, based
+on the transactions for that customer.
+
+A transaction consists of a Customer ID and a quantity.
+
+A customer has a Customer ID, a name, a unit price, and max price.
+The unit price is the price per transaction unit for that customer (the
+transaction quantity is the number of units for a given transaction).
+The max price is the maximum amount a customer can be priced in total.
+
+The total price for a customer is calculated as follows:
+
+    - If the customer do not have max price, the total price is the sum of all
+      transaction units multiplied by the unit price.
+
+    - If the customer has a max price, the total price is the sum of all
+      transaction units multiplied by the unit price, but if this total price
+      greater than the max price, the total price is set to the max price.
+
+Doubles are used for monetary values, for sake of simplicity.
+
+It shouldn't be necessary to use anything else than the Java standard library.
+
+Do the implementation in:
+    src/main/java/org/example/TransactionPricing.java
+
+Test the implementation with:
+    src/test/java/org/example/TransactionPricingTest.java
